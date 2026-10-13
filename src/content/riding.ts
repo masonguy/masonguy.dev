@@ -22,7 +22,7 @@ export type RaceResult = {
  *
  * Pro podiums are top-five finishes in Pro:
  * - 2nd, Galbraith Enduro, Jul 12, 2026 (event recap: Pro Men).
- * - 4th, Yacolt Burn, Jun 27, 2026. Roots & Rain lists this as 5th of 7.
+ * - 5th, Yacolt Burn, Jun 27, 2026.
  * - 4th, Cascadia Dirt Cup #5, Hood River, Sep 19, 2026.
  * - 5th, Cascadia Dirt Cup #3, Raging River, Jun 30, 2024.
  *
@@ -44,7 +44,9 @@ export const ridingIntro = {
   kicker: 'Bike racer',
   home: 'Bellingham, WA',
   paragraphs: [
-    'I race the Cascadia Dirt Cup, the premier enduro series in Washington, Oregon, and Idaho, where I finished 4th overall against World Cup riders. I also race downhill on the NW Cup, and I have started in Canada, Mexico, Portugal, and Switzerland.',
+    "I'm Mason Rudolph, a pro enduro mountain bike racer competing at the top level of local and continental races in WA, OR, ID, and BC.",
+    "The value I can offer your brand is boots on the ground: racing and appearing at all the local events in Bellingham, a notoriously hard town for brands to break into. I don't have the usual social media presence, so it doesn't read as a sponsored feed. The brands I support get authentic, in-person representation and real use.",
+    "I love bike racing because of the friends I've made and the places I've been. I'm not the racer who loads up and drives off unless it's a dream result. I stay in the pits, chatting and being friendly, because racing and representation are about more than results. I want to keep supporting racing so others have the same opportunities I did. If this interests you, I'd love to collaborate.",
   ],
 }
 
@@ -75,25 +77,25 @@ export const proPodiums: RaceResult[] = [
   {
     date: '2026-09-19',
     event: 'Post Canyon',
-    meta: 'Cascadia Dirt Cup · Pro · Hood River, OR · 20:49.96',
+    meta: 'Cascadia Dirt Cup · Pro · OR',
     place: '4th',
   },
   {
     date: '2026-07-12',
     event: 'Galbraith Enduro',
-    meta: 'Northwest Tune-Up · Pro Men · 22:30.67',
+    meta: 'Northwest Tune-Up · Pro Men · WA',
     place: '2nd',
   },
   {
     date: '2026-06-27',
     event: 'Yacolt Burn',
-    meta: 'Cascadia Dirt Cup · Pro · Battle Ground, WA · 29:30.61',
-    place: '4th',
+    meta: 'Cascadia Dirt Cup · Pro · WA',
+    place: '5th',
   },
   {
     date: '2024-06-30',
     event: 'Raging River',
-    meta: 'Cascadia Dirt Cup · Pro · 20:57.86',
+    meta: 'Cascadia Dirt Cup · Pro · WA',
     place: '5th',
   },
 ]
@@ -123,13 +125,18 @@ export const recentHighlights: Highlight[] = [
 
 export const resultsRecordHref = 'https://www.rootsandrain.com/rider157717/mason-rudolph/results/'
 
-export const plans2027 = [
-  'Squamish Enduro',
-  'Cascadia Dirt Cup',
-  'North American Enduro Cup',
-  'Crankworx Enduro Series',
-  'Enduro World Champs',
-  'Multi-Day Enduro Race',
+export type Plan2027 = {
+  event: string
+  flag: string
+}
+
+export const plans2027: Plan2027[] = [
+  { event: 'Squamish Enduro', flag: '🇨🇦' },
+  { event: 'Cascadia Dirt Cup', flag: '🇺🇸' },
+  { event: 'North American Enduro Cup', flag: '🇺🇸' },
+  { event: 'Crankworx Enduro Series', flag: '🌐' },
+  { event: 'Enduro World Champs', flag: '🇫🇷' },
+  { event: 'Multi-Day Enduro Race', flag: '🌐' },
 ]
 
 export const trailPhoto = {

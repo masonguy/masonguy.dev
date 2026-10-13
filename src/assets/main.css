@@ -422,20 +422,20 @@ ol {
 }
 
 .plans li {
-  position: relative;
-  padding: 0.85rem 0 0.85rem 1.35rem;
+  padding: 0.85rem 0 0.95rem;
   border-top: 1px solid var(--line);
+}
+
+.plan-event {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   font-weight: 600;
 }
 
-.plans li::before {
-  content: '';
-  position: absolute;
-  top: 1.25rem;
-  left: 0;
-  width: 0.42rem;
-  height: 0.42rem;
-  background: var(--pine);
+.plan-flag {
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
 .plans li:last-child {

@@ -67,7 +67,12 @@ import {
       <section class="plans" aria-labelledby="plans-heading">
         <h2 id="plans-heading">2027 plans</h2>
         <ul>
-          <li v-for="event in plans2027" :key="event">{{ event }}</li>
+          <li v-for="plan in plans2027" :key="plan.event">
+            <p class="plan-event">
+              {{ plan.event }}
+              <span class="plan-flag">{{ plan.flag }}</span>
+            </p>
+          </li>
         </ul>
       </section>
     </div>
