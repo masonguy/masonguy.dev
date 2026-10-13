@@ -5,6 +5,7 @@ const props = defineProps<{
   label: string
   value: number
   detail: string
+  suffix?: string
 }>()
 
 const root = ref<HTMLElement | null>(null)
@@ -59,10 +60,11 @@ onBeforeUnmount(() => {
 <template>
   <article ref="root" class="stat">
     <p class="stat-value">
-      <span class="stat-sizer" aria-hidden="true">{{ value }}</span>
-      <span class="stat-shown">{{ shown }}</span>
+      <span class="stat-sizer" aria-hidden="true">{{ value }}{{ suffix }}</span>
+      <span class="stat-shown">{{ shown }}{{ suffix }}</span>
     </p>
     <h2>{{ label }}</h2>
-    <p class="stat-detail">{{ detail }}</p>
+    <p v-if="detail" class="stat-detail">{{ detail }}</p>
+    <slot />
   </article>
 </template>

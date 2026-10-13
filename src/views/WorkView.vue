@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import SponsorAsk from '@/components/SponsorAsk.vue'
 import { workItems, workPage } from '@/content/work'
 </script>
 
@@ -28,7 +27,5 @@ import { workItems, workPage } from '@/content/work'
         </div>
       </article>
     </section>
-
-    <SponsorAsk />
   </main>
 </template>

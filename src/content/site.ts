@@ -1,11 +1,6 @@
 export const site = {
   name: 'Mason Rudolph',
-  description: 'Mason Rudolph, enduro and downhill racer. Results, photos, and sponsorship.',
-  /**
-   * Set this to a real address and a contact link appears on both pages.
-   * Example: 'mason@masonguy.dev'
-   */
-  email: '',
+  description: 'Mason Rudolph, enduro and downhill racer.',
 } as const
 
 export const nav = [

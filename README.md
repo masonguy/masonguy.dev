@@ -6,7 +6,6 @@ Personal site for GitHub Pages. Two scrolling pages, Ride and Work, in Vue 3 and
 
 - Ride totals, blurbs, results, and photo captions: `src/content/riding.ts`
 - Work entries: `src/content/work.ts`
-- Contact email: `src/content/site.ts`
 
 Original photos stay in `photos/originals/`. The site serves the smaller copies in `src/assets/photos/`.
 
