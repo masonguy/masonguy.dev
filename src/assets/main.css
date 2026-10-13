@@ -443,10 +443,18 @@ ol {
   border-bottom: 1px solid var(--line);
 }
 
-.trail {
+.trail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.5rem;
+  align-items: start;
   max-width: var(--wide);
   margin: 0 auto;
   padding: 0 1.5rem 4.5rem;
+}
+
+.trail {
+  margin: 0;
 }
 
 .trail figcaption {
@@ -559,7 +567,8 @@ ol {
 
   .intro,
   .feature,
-  .role {
+  .role,
+  .trail-row {
     grid-template-columns: 1fr;
   }
 

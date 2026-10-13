@@ -13,7 +13,7 @@ import {
   ridingStats,
   supportedBy,
   ridingStatsNote,
-  trailPhoto,
+  trailPhotos,
 } from '@/content/riding'
 </script>
 
@@ -133,17 +133,19 @@ import {
       </ol>
     </section>
 
-    <figure class="trail">
-      <img
-        :src="trailPhoto.src"
-        :alt="trailPhoto.alt"
-        :width="trailPhoto.width"
-        :height="trailPhoto.height"
-        loading="lazy"
-      />
-      <figcaption>
-        <span>Photo · {{ trailPhoto.credit }}</span>
-      </figcaption>
-    </figure>
+    <div class="trail-row">
+      <figure v-for="photo in trailPhotos" :key="photo.alt" class="trail">
+        <img
+          :src="photo.src"
+          :alt="photo.alt"
+          :width="photo.width"
+          :height="photo.height"
+          loading="lazy"
+        />
+        <figcaption v-if="photo.credit">
+          <span>Photo · {{ photo.credit }}</span>
+        </figcaption>
+      </figure>
+    </div>
   </main>
 </template>

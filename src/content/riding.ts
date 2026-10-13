@@ -1,6 +1,7 @@
 import plate104 from '@/assets/photos/plate-104.jpg'
 import plate28 from '@/assets/photos/plate-28.jpg'
 import podium from '@/assets/photos/podium.jpg'
+import ridge from '@/assets/photos/ridge.jpg'
 
 export type CareerStat = {
   id: string
@@ -139,10 +140,19 @@ export const plans2027: Plan2027[] = [
   { event: 'Multi-Day Enduro Race', flag: '🌐' },
 ]
 
-export const trailPhoto = {
-  src: plate104,
-  alt: 'Mason Rudolph manuals a mountain bike through a narrow forest trail.',
-  credit: 'Kid Clicks A Lot',
-  width: 2000,
-  height: 1333,
-}
+export const trailPhotos = [
+  {
+    src: plate104,
+    alt: 'Mason Rudolph manuals a mountain bike through a narrow forest trail.',
+    credit: 'Kid Clicks A Lot',
+    width: 2000,
+    height: 1333,
+  },
+  {
+    src: ridge,
+    alt: 'Mason Rudolph stands with a mountain bike on a rocky alpine ridge and gives a thumbs up.',
+    credit: '',
+    width: 2000,
+    height: 1506,
+  },
+]
