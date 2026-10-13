@@ -9,7 +9,8 @@ export type WorkItem = {
 export const workPage = {
   kicker: 'Work',
   title: 'Off the bike',
-  summary: 'Racing is the public part. The rest of what I do will go here.',
+  summary:
+    "I'm a software/data engineer with 6 years of experience. This page is under construction.",
 }
 
 /**
