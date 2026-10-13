@@ -9,8 +9,7 @@ export type WorkItem = {
 export const workPage = {
   kicker: 'Work',
   title: 'Off the bike',
-  summary:
-    "I'm a software/data engineer with 6 years of experience. This page is under construction.",
+  summary: 'Software/data engineer with 6 years of experience. This page is under construction.',
 }
 
 /**
@@ -25,3 +24,19 @@ export const workPage = {
  * }
  */
 export const workItems: WorkItem[] = []
+
+export const techStack = [
+  'C#',
+  'Kotlin',
+  'Python',
+  'SQL',
+  'Terraform',
+  'Airflow',
+  'Azure',
+  'GCP',
+  'BigQuery',
+  'Java',
+  'TypeScript',
+  'Angular',
+  'Vue',
+]

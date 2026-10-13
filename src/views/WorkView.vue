@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import { workItems, workPage } from '@/content/work'
+import { techStack, workItems, workPage } from '@/content/work'
 </script>
 
 <template>
@@ -12,6 +12,13 @@ import { workItems, workPage } from '@/content/work'
       <p>
         <RouterLink class="text-link" to="/">See the racing</RouterLink>
       </p>
+    </section>
+
+    <section class="stack" aria-labelledby="stack-heading">
+      <h2 id="stack-heading">Tech stack</h2>
+      <ul v-if="techStack.length">
+        <li v-for="tool in techStack" :key="tool">{{ tool }}</li>
+      </ul>
     </section>
 
     <section v-if="workItems.length" class="roles" aria-label="Work">
