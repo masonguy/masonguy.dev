@@ -17,6 +17,7 @@ function githubPagesFallback(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: `${process.env.PAGES_BASE_PATH ?? ''}/`,
   plugins: [vue(), vueDevTools(), githubPagesFallback()],
   resolve: {
     alias: {
