@@ -1,3 +1,7 @@
+import canadaFlag from '@/assets/icons/canada.svg'
+import franceFlag from '@/assets/icons/france.svg'
+import globeIcon from '@/assets/icons/globe.svg'
+import unitedStatesFlag from '@/assets/icons/united-states.svg'
 import plate104 from '@/assets/photos/plate-104.jpg'
 import plate28 from '@/assets/photos/plate-28.jpg'
 import podium from '@/assets/photos/podium.jpg'
@@ -129,15 +133,16 @@ export const resultsRecordHref = 'https://www.rootsandrain.com/rider157717/mason
 export type Plan2027 = {
   event: string
   flag: string
+  flagLabel: string
 }
 
 export const plans2027: Plan2027[] = [
-  { event: 'Squamish Enduro', flag: '🇨🇦' },
-  { event: 'Cascadia Dirt Cup', flag: '🇺🇸' },
-  { event: 'North American Enduro Cup', flag: '🇺🇸' },
-  { event: 'Crankworx Enduro Series', flag: '🌐' },
-  { event: 'Enduro World Champs', flag: '🇫🇷' },
-  { event: 'Multi-Day Enduro Race', flag: '🌐' },
+  { event: 'Squamish Enduro', flag: canadaFlag, flagLabel: 'Canada' },
+  { event: 'Cascadia Dirt Cup', flag: unitedStatesFlag, flagLabel: 'United States' },
+  { event: 'North American Enduro Cup', flag: unitedStatesFlag, flagLabel: 'United States' },
+  { event: 'Crankworx Enduro Series', flag: globeIcon, flagLabel: 'International' },
+  { event: 'Enduro World Champs', flag: franceFlag, flagLabel: 'France' },
+  { event: 'Multi-Day Enduro Race', flag: globeIcon, flagLabel: 'International' },
 ]
 
 export const trailPhotos = [
