@@ -70,7 +70,7 @@ import {
           <li v-for="plan in plans2027" :key="plan.event">
             <p class="plan-event">
               {{ plan.event }}
-              <span class="plan-flag">{{ plan.flag }}</span>
+              <img class="plan-flag" :src="plan.flag" :alt="plan.flagLabel" />
             </p>
           </li>
         </ul>
